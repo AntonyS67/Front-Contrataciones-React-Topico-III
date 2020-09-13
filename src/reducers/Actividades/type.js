@@ -1,0 +1,2 @@
+export const GET_ACTIVIDADES = 'GET_ACTIVIDADES';
+export const GET_ACTIVIDAD = 'GET_ACTIVIDAD';

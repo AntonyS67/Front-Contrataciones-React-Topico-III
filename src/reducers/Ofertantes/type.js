@@ -1,0 +1,2 @@
+export const GET_OFERTANTES = 'GET_OFERTANTES';
+export const GET_OFERTANTE = 'GET_OFERTANTE';

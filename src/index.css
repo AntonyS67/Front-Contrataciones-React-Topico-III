@@ -1,13 +1,182 @@
+*{
+  box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #282c3f !important;
+  text-align: left;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.block{
+  background-color: #fff;
+}
+
+.block-content{
+  transition: opacity 0.2s ease-out;
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.input-group{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  width: 100%;
+  transition: 0.2s linear all;
+}
+
+.input-group-prepend{
+  margin-right: -1px;
+  overflow-x: hidden;
+}
+
+.search-box{
+  top: -1px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.09);
+}
+
+.nav-page-title{
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 45px;
+}
+.input-group> .input-group-prepend > .btn{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group-prepend .btn{
+  z-index: 2;
+}
+
+.btn .si{
+  position: relative;
+  top: 1px;
+}
+button{
+  text-transform: none;
+  overflow: hidden;
+  margin: 0;
+}
+
+.btn:hover{
+  text-decoration: none;
+}
+
+.btn:not(:disabled):not(.disabled):active{
+  background-image:none;
+  cursor: pointer;
+}
+
+.search-navs-btns{
+  height: 4rem;
+  border:0;
+  width: 65px;
+  background:#fff;
+  border-radius: 0;
+}
+
+.search-navs-btns > i{
+  font-weight: 900;
+}
+
+.si{
+  font-family: "simple-line-icons";
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.input-group > .form-control:not(:first-child){
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group > .form-control:not(:last-child){
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group > .form-control{
+  position: relative;
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+
+.search-input{
+  font-size: 0.9375rem;
+  height: 4rem;
+  border:0;
+}
+
+.form-control{
+  display: block;
+  padding: 8px 14px;
+  line-height: 16px;
+  color: #575757;
+  background-color: #fff;
+  background-clip: padding-box;
+  transition: border-color ease-in-out 0.15s;
+}
+p{
+  margin-top:0;
+}
+
+.block-content{
+  padding: 18px 18px 18px;
+  overflow-x: visible;
+}
+
+.mt-50{
+  margin-top: 50px;
+}
+
+.card-title{
+  font-size: 1rem;
+}
+.card-text{
+  font-size: .9rem;
+}
+
+.auth-error{
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding:0.8rem;
+}
+
+.error-shake{
+  animation: shake 0.85s cubic-bezier(0.36, 0.07, 0.both);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  font-size: 13px;
+}
+.pull-left{
+  float: left !important;
+}
+.pull-right{
+  float: right !important;
+}
+
+.mb-50{
+  margin-bottom: 50px !important;
+}
+
+.mb-100{
+  margin-bottom: 100px !important;
+}
+
+/* Datepicker */
+
+.react-datepicker-wrapper{
+  display: block !important;
 }
