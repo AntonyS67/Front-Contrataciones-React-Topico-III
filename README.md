@@ -1,8 +1,15 @@
+This project use this api, build at Lumen (PHP) https://github.com/AntonyS67/Api-Contratacione-Lumen-Topico-III
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `Install Dependencies`
+Run the next command:
+- npm install or
+- yarn install
 
 ### `yarn start`
 
